@@ -14,5 +14,5 @@ class Vote < ApplicationRecord
     end
   end
 
-  validates_inclusion_of :vote, :in => 1..2, :message => "Chapas válidas: 1 e 2"
+  validates_inclusion_of :vote, :in => 0..2, :message => "Chapas válidas: 1 e 2 ou 0 (Branco)"
 end
